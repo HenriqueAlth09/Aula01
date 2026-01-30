@@ -15,23 +15,5 @@
   <button onclick="calcularBonus()">Calcular</button>
   
   <div id="resultado"></div>
-  
-  <script>
-    function calcularBonus() {
-      const salario = parseFloat(document.getElementById("salario").value);
-      let bonus = 0;
-      let salarioFinal = salario;
-
-      if (salario > 2000) {
-        bonus = salario * 10/100;
-        salarioFinal = salario + bonus;
-      }
-
-      document.getElementById("resultado").innerHTML = `
-        Valor do bônus: R$ ${bonus.toFixed(2)} <br>
-        Salário final: R$ ${salarioFinal.toFixed(2)}
-      `;
-    }
-  </script>
 </body>
 </html>

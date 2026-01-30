@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cálculo de Mensalidade</title>
+    <link rel="stylesheet" href="exercicio05.css"
+</head>
+<body>
+    <h2>Calculadora de Mensalidade</h2>
+    
+    <label for="mensalidade">Valor da mensalidade (R$):</label>
+    <input type="number" id="mensalidade" step="0.01"><br><br>
+    
+    <label for="dias">Dias de atraso:</label>
+    <input type="number" id="dias"><br><br>
+    
+    <button onclick="calcular()">Calcular</button>
+    
+    <h3>Resultado:</h3>
+    <p id="multa">Multa: R$ 0,00</p>
+    <p id="total">Total a pagar: R$ 0,00</p>
+    <script src="exercicio05.js"></script>
+</body>
+</html>

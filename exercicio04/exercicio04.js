@@ -1,15 +1,19 @@
-function reajustar(){
-    let valor = Number(document.getElementById('salario').value);
-    let taxa = 0
+function calcularTaxa() {
+      const valor = parseFloat(document.getElementById("valor").value);
+      let taxa = 0
 
-    if(valor>100){
-        taxa = valor * 10/100;
+      
+      if (isNaN(valor) || valor <= 100) {
+      }
+      
+      if (valor < 100) {
+      } else {
+       taxa = valor * 10/100
+      }
+      
+      const valorTotal = valor + taxa;
+      
+      document.getElementById("resultado").innerHTML = 
+        `Valor do frete: R$ ${taxa.toFixed(2)} <br> 
+         Valor total da compra: R$ ${valorTotal.toFixed(2)}`;
     }
-
-    let valorTotal = salario + taxa;
-
-    resultado.innerHTML = `
-    desconto de R$ ${bonus.toFixed(2)} <br>
-    preco final R$ ${valorTotal.toFixed(2)}
-    `;
-}
